@@ -4,7 +4,7 @@ from rest_framework import viewsets
 from django.contrib.auth.models import User
 
 
-class MenuItemSerializer(serializers.ModelSerializer):
+class MenuSerializer(serializers.ModelSerializer):
     class Meta:
         model = Menu
         fields = ['url', 'username', 'email', 'groups']
