@@ -9,7 +9,7 @@ class Menu(models.Model):
     inventory = models.IntegerField(max_length=5)
 
     def __str__(self):
-        return self.title
+        return f'{self.title} : {str(self.price)}'
 
 
 class Booking(models.Model):
