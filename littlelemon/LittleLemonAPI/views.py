@@ -7,7 +7,7 @@ from rest_framework.response import Response
 # Create your views here.
 
 
-class SingleMenuItemView(generics.RetrieveUpdateAPIView):
+class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
 

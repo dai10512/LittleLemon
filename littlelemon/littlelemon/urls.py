@@ -12,9 +12,9 @@ urlpatterns = [
     # 外部向け
     path('restaurant/', include('restaurant.urls')),
     path('restaurant/menu/', include('restaurant.urls')),
-    path('restaurant/booking/',include(router.urls)),
+    path('restaurant/booking/', include(router.urls)),
     # 内部むけ
-    path('api/',include('LittleLemonAPI.urls')),
-    path('auth/',include('djoser.urls')),
+    path('api/', include('LittleLemonAPI.urls')),
+    path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.authtoken')),
 ]
