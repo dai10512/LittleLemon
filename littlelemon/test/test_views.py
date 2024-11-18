@@ -4,6 +4,7 @@ from LittleLemonAPI.serializers import MenuItemSerializer
 
 
 class MenuViewTest(TestCase):
+    @classmethod
     def setUp(self):
         self.item1 = MenuItem.objects.create(
             id=1,
